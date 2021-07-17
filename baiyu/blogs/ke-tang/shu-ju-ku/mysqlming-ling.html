@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Mysql笔记 | 青菜白玉汤</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/baiyu/favicon.ico">
+    <meta name="description" content="个人博客">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/baiyu/assets/css/0.styles.0048254e.css" as="style"><link rel="preload" href="/baiyu/assets/js/app.da37ac01.js" as="script"><link rel="preload" href="/baiyu/assets/js/4.8206f188.js" as="script"><link rel="preload" href="/baiyu/assets/js/1.ffe9b45f.js" as="script"><link rel="preload" href="/baiyu/assets/js/48.6a1298a6.js" as="script"><link rel="prefetch" href="/baiyu/assets/js/10.3e53edc0.js"><link rel="prefetch" href="/baiyu/assets/js/11.807f513f.js"><link rel="prefetch" href="/baiyu/assets/js/12.c915eec7.js"><link rel="prefetch" href="/baiyu/assets/js/13.a49d779f.js"><link rel="prefetch" href="/baiyu/assets/js/14.f45abae2.js"><link rel="prefetch" href="/baiyu/assets/js/15.003771ee.js"><link rel="prefetch" href="/baiyu/assets/js/16.d44f5624.js"><link rel="prefetch" href="/baiyu/assets/js/17.90d7ad6d.js"><link rel="prefetch" href="/baiyu/assets/js/18.9df4ecd4.js"><link rel="prefetch" href="/baiyu/assets/js/19.e0b768ba.js"><link rel="prefetch" href="/baiyu/assets/js/20.e0604d58.js"><link rel="prefetch" href="/baiyu/assets/js/21.a587536f.js"><link rel="prefetch" href="/baiyu/assets/js/22.47d8ceea.js"><link rel="prefetch" href="/baiyu/assets/js/23.434c8ead.js"><link rel="prefetch" href="/baiyu/assets/js/24.74ace482.js"><link rel="prefetch" href="/baiyu/assets/js/25.443d3316.js"><link rel="prefetch" href="/baiyu/assets/js/26.15d9e0e8.js"><link rel="prefetch" href="/baiyu/assets/js/27.39710679.js"><link rel="prefetch" href="/baiyu/assets/js/28.d5ec7927.js"><link rel="prefetch" href="/baiyu/assets/js/29.ebd7b2b1.js"><link rel="prefetch" href="/baiyu/assets/js/30.a60b59e0.js"><link rel="prefetch" href="/baiyu/assets/js/31.fe7ed9be.js"><link rel="prefetch" href="/baiyu/assets/js/32.0049dd79.js"><link rel="prefetch" href="/baiyu/assets/js/33.fc2f6dee.js"><link rel="prefetch" href="/baiyu/assets/js/34.e882e4ff.js"><link rel="prefetch" href="/baiyu/assets/js/35.38c3feab.js"><link rel="prefetch" href="/baiyu/assets/js/36.b17ae6d6.js"><link rel="prefetch" href="/baiyu/assets/js/37.c55c2797.js"><link rel="prefetch" href="/baiyu/assets/js/38.e3c11f7f.js"><link rel="prefetch" href="/baiyu/assets/js/39.453ba5b8.js"><link rel="prefetch" href="/baiyu/assets/js/40.3684bc9d.js"><link rel="prefetch" href="/baiyu/assets/js/41.79ca74e9.js"><link rel="prefetch" href="/baiyu/assets/js/42.2135e29c.js"><link rel="prefetch" href="/baiyu/assets/js/43.ba66cecc.js"><link rel="prefetch" href="/baiyu/assets/js/44.8320c39e.js"><link rel="prefetch" href="/baiyu/assets/js/45.0f4618af.js"><link rel="prefetch" href="/baiyu/assets/js/46.85b2b073.js"><link rel="prefetch" href="/baiyu/assets/js/47.80523055.js"><link rel="prefetch" href="/baiyu/assets/js/49.d95a26ee.js"><link rel="prefetch" href="/baiyu/assets/js/5.a0eebce6.js"><link rel="prefetch" href="/baiyu/assets/js/50.ae7d66a6.js"><link rel="prefetch" href="/baiyu/assets/js/51.7e68c97a.js"><link rel="prefetch" href="/baiyu/assets/js/52.696f17c5.js"><link rel="prefetch" href="/baiyu/assets/js/53.f3ee71ee.js"><link rel="prefetch" href="/baiyu/assets/js/6.3e4cdaf7.js"><link rel="prefetch" href="/baiyu/assets/js/7.0caf1c09.js"><link rel="prefetch" href="/baiyu/assets/js/8.f3f72e18.js"><link rel="prefetch" href="/baiyu/assets/js/9.88a53cea.js"><link rel="prefetch" href="/baiyu/assets/js/vendors~flowchart.79f5e21c.js">
+    <link rel="stylesheet" href="/baiyu/assets/css/0.styles.0048254e.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-1156296a><div data-v-1156296a><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-1156296a data-v-1156296a><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-4e82dffc data-v-1156296a data-v-1156296a><h3 class="title" data-v-4e82dffc data-v-4e82dffc>青菜白玉汤</h3> <p class="description" data-v-4e82dffc data-v-4e82dffc>个人博客</p> <label id="box" class="inputBox" data-v-4e82dffc data-v-4e82dffc><input type="password" value="" data-v-4e82dffc> <span data-v-4e82dffc>Konck! Knock!</span> <button data-v-4e82dffc>OK</button></label> <div class="footer" data-v-4e82dffc data-v-4e82dffc><span data-v-4e82dffc><i class="iconfont reco-theme" data-v-4e82dffc></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-4e82dffc>vuePress-theme-reco</a></span> <span data-v-4e82dffc><i class="iconfont reco-copyright" data-v-4e82dffc></i> <a data-v-4e82dffc><span data-v-4e82dffc>Baiyusoup</span>
+            
+          <!---->
+          2021
+        </a></span></div></div> <div class="hide" data-v-1156296a><header class="navbar" data-v-1156296a><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/baiyu/" class="home-link router-link-active"><!----> <span class="site-name">青菜白玉汤</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/baiyu/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/baiyu/categories/CSS/" class="nav-link"><i class="undefined"></i>
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/baiyu/categories/JavaScript/" class="nav-link"><i class="undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/baiyu/categories/前端工程化/" class="nav-link"><i class="undefined"></i>
+  前端工程化
+</a></li><li class="dropdown-item"><!----> <a href="/baiyu/categories/组件库/" class="nav-link"><i class="undefined"></i>
+  组件库
+</a></li><li class="dropdown-item"><!----> <a href="/baiyu/categories/源码系列/" class="nav-link"><i class="undefined"></i>
+  源码系列
+</a></li><li class="dropdown-item"><!----> <a href="/baiyu/categories/课堂/" class="nav-link"><i class="undefined"></i>
+  课堂
+</a></li><li class="dropdown-item"><!----> <a href="/baiyu/categories/算法系列/" class="nav-link"><i class="undefined"></i>
+  算法系列
+</a></li><li class="dropdown-item"><!----> <a href="/baiyu/categories/课堂系列/" class="nav-link"><i class="undefined"></i>
+  课堂系列
+</a></li></ul></div></div><div class="nav-item"><a href="/baiyu/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      联系
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/Baiyusoup" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="http://139.155.22.154/sprint/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  面试题库
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-1156296a></div> <aside class="sidebar" data-v-1156296a><div class="personal-info-wrapper" data-v-828910c6 data-v-1156296a><img src="/baiyu/author.jpg" alt="author-avatar" class="personal-img" data-v-828910c6> <h3 class="name" data-v-828910c6>
+    Baiyusoup
+  </h3> <div class="num" data-v-828910c6><div data-v-828910c6><h3 data-v-828910c6>42</h3> <h6 data-v-828910c6>Articles</h6></div> <div data-v-828910c6><h3 data-v-828910c6>15</h3> <h6 data-v-828910c6>Tags</h6></div></div> <ul class="social-links" data-v-828910c6></ul> <hr data-v-828910c6></div> <nav class="nav-links"><div class="nav-item"><a href="/baiyu/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/baiyu/categories/CSS/" class="nav-link"><i class="undefined"></i>
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/baiyu/categories/JavaScript/" class="nav-link"><i class="undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/baiyu/categories/前端工程化/" class="nav-link"><i class="undefined"></i>
+  前端工程化
+</a></li><li class="dropdown-item"><!----> <a href="/baiyu/categories/组件库/" class="nav-link"><i class="undefined"></i>
+  组件库
+</a></li><li class="dropdown-item"><!----> <a href="/baiyu/categories/源码系列/" class="nav-link"><i class="undefined"></i>
+  源码系列
+</a></li><li class="dropdown-item"><!----> <a href="/baiyu/categories/课堂/" class="nav-link"><i class="undefined"></i>
+  课堂
+</a></li><li class="dropdown-item"><!----> <a href="/baiyu/categories/算法系列/" class="nav-link"><i class="undefined"></i>
+  算法系列
+</a></li><li class="dropdown-item"><!----> <a href="/baiyu/categories/课堂系列/" class="nav-link"><i class="undefined"></i>
+  课堂系列
+</a></li></ul></div></div><div class="nav-item"><a href="/baiyu/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      联系
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/Baiyusoup" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="http://139.155.22.154/sprint/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  面试题库
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-4e82dffc data-v-1156296a><h3 class="title" data-v-4e82dffc data-v-4e82dffc>Mysql笔记</h3> <!----> <label id="box" class="inputBox" data-v-4e82dffc data-v-4e82dffc><input type="password" value="" data-v-4e82dffc> <span data-v-4e82dffc>Konck! Knock!</span> <button data-v-4e82dffc>OK</button></label> <div class="footer" data-v-4e82dffc data-v-4e82dffc><span data-v-4e82dffc><i class="iconfont reco-theme" data-v-4e82dffc></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-4e82dffc>vuePress-theme-reco</a></span> <span data-v-4e82dffc><i class="iconfont reco-copyright" data-v-4e82dffc></i> <a data-v-4e82dffc><span data-v-4e82dffc>Baiyusoup</span>
+            
+          <!---->
+          2021
+        </a></span></div></div> <div data-v-1156296a><main class="page"><section><div class="page-title"><h1 class="title">Mysql笔记</h1> <div data-v-1ff7123e><i class="iconfont reco-account" data-v-1ff7123e><span data-v-1ff7123e>青菜白玉汤</span></i> <i class="iconfont reco-date" data-v-1ff7123e><span data-v-1ff7123e>3/1/2021</span></i> <!----> <i class="tags iconfont reco-tag" data-v-1ff7123e><span class="tag-item" data-v-1ff7123e>MySql</span></i></div></div> <div class="theme-reco-content content__default"><h3 id="创建"><a href="#创建" class="header-anchor">#</a> 创建</h3> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>create database <span class="token punctuation">[</span>数据库名<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+create database <span class="token keyword">if</span> not exists <span class="token punctuation">[</span>数据库名<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token comment"># 指定字符集和校对规则</span>
+create database <span class="token punctuation">[</span>name<span class="token punctuation">]</span> default character <span class="token builtin class-name">set</span> utf8mb4 collate utf8mb4_general_ci<span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h3 id="使用和查看"><a href="#使用和查看" class="header-anchor">#</a> 使用和查看</h3> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment"># 使用某数据库</span>
+use <span class="token punctuation">[</span>name<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token comment"># 查看所有数据库</span>
+show databases<span class="token punctuation">;</span>
+
+show database like <span class="token string">'test'</span><span class="token punctuation">;</span>
+show database like <span class="token string">'%test%'</span><span class="token punctuation">;</span>
+
+<span class="token comment"># 查看数据库的定义声明</span>
+show create database <span class="token punctuation">[</span>name<span class="token punctuation">]</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><h3 id="修改和删除"><a href="#修改和删除" class="header-anchor">#</a> 修改和删除</h3> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment"># 修改数据库的字符集和较对规则（也只能修改这两个）</span>
+alter database <span class="token punctuation">[</span>name<span class="token punctuation">]</span> character <span class="token builtin class-name">set</span> utf8mb4 collate utf8mb4_unicode_ci<span class="token punctuation">;</span>
+
+<span class="token comment"># 删除数据库（无法恢复）</span>
+drop database <span class="token keyword">if</span> exists <span class="token punctuation">[</span>name<span class="token punctuation">]</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h2 id="数据表"><a href="#数据表" class="header-anchor">#</a> 数据表</h2> <h3 id="创建和查看"><a href="#创建和查看" class="header-anchor">#</a> 创建和查看</h3> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment">## 创建</span>
+create table <span class="token punctuation">[</span>table_name<span class="token punctuation">]</span> <span class="token punctuation">(</span>字段1 数据类型, 字段2 数据类型, <span class="token punctuation">..</span>.<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment"># 查看当前数据库的所有表</span>
+show tables<span class="token punctuation">;</span>
+
+<span class="token comment"># 查看表的详细信息</span>
+show create table <span class="token punctuation">[</span>table_name<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token comment"># 查看表结构</span>
+describe/desc <span class="token punctuation">[</span>table_name<span class="token punctuation">]</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><h3 id="修改和删除-2"><a href="#修改和删除-2" class="header-anchor">#</a> 修改和删除</h3> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment"># 修改表名</span>
+alter table <span class="token punctuation">[</span>old name<span class="token punctuation">]</span> REANME <span class="token punctuation">[</span>new name<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token comment"># 修改字符集和较对规则</span>
+alter table <span class="token punctuation">[</span>table_name<span class="token punctuation">]</span> character <span class="token builtin class-name">set</span> xxx default collate xxx<span class="token punctuation">;</span>
+
+<span class="token comment"># 修改字段名和数据类型</span>
+alter table <span class="token punctuation">[</span>table_name<span class="token punctuation">]</span> CHANGE <span class="token punctuation">[</span>old name<span class="token punctuation">]</span> <span class="token punctuation">[</span>new name<span class="token punctuation">]</span> <span class="token punctuation">[</span>new <span class="token builtin class-name">type</span> or old type<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token comment"># 修改数据类型</span>
+alter table <span class="token punctuation">[</span>table_name<span class="token punctuation">]</span> MODIFY <span class="token punctuation">[</span>字段<span class="token punctuation">]</span> <span class="token punctuation">[</span>new type<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token comment"># 修改字段的默认值</span>
+alter table <span class="token punctuation">[</span>table_name<span class="token punctuation">]</span> CHANGE <span class="token punctuation">[</span>字段<span class="token punctuation">]</span> <span class="token punctuation">[</span>类型<span class="token punctuation">]</span> defult <span class="token punctuation">[</span>new value<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token comment"># 添加新字段</span>
+alter table <span class="token punctuation">[</span>table_name<span class="token punctuation">]</span> ADD <span class="token punctuation">[</span>新字段<span class="token punctuation">]</span> <span class="token punctuation">[</span>type<span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment"># 末尾</span>
+alter table <span class="token punctuation">[</span>table_name<span class="token punctuation">]</span> ADD <span class="token punctuation">[</span>新字段<span class="token punctuation">]</span> <span class="token punctuation">[</span>type<span class="token punctuation">]</span> FIRST<span class="token punctuation">;</span> <span class="token comment"># 在开头</span>
+alter table <span class="token punctuation">[</span>table_name<span class="token punctuation">]</span> ADD <span class="token punctuation">[</span>新字段<span class="token punctuation">]</span> <span class="token punctuation">[</span>type<span class="token punctuation">]</span> AFTER <span class="token punctuation">[</span>字段<span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment"># 在某字段后面</span>
+
+<span class="token comment"># 删除字段</span>
+alter table <span class="token punctuation">[</span>table_name<span class="token punctuation">]</span> DROP <span class="token punctuation">[</span>字段<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token comment"># 删除表</span>
+drop table <span class="token keyword">if</span> exsits 表1, 表2, <span class="token punctuation">..</span>.<span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br></div></div><h2 id="约束"><a href="#约束" class="header-anchor">#</a> 约束</h2> <ol><li>主键约束 PRIMARY KEY</li> <li>唯一约束 UNIQUE</li> <li>非空约束 NOT NULL</li> <li>检查约束 CHECK</li> <li>默认约束 DEFAULT</li> <li>外键约束  REFERENCES：</li> <li>主键的关联列必须是一个KEY，且两者类型相同或兼容</li> <li>插入数据时，先插入主表，再插入从表</li></ol> <h3 id="添加约束"><a href="#添加约束" class="header-anchor">#</a> 添加约束</h3> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment"># 创建表时添加</span>
+// 从表
+CREATE TABLE student<span class="token punctuation">(</span>
+	<span class="token function">id</span> INT PRIMARY KEY, <span class="token comment"># 主键约束</span>
+	stu_name VARCHAR<span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span> NOT NULL, <span class="token comment"># 非空约束</span>
+	gender CHAR<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> CHECK<span class="token punctuation">(</span>gender <span class="token operator">=</span> <span class="token string">'男'</span> OR gender <span class="token operator">=</span> <span class="token string">'女'</span><span class="token punctuation">)</span>, <span class="token comment"># 检查约束</span>
+	seat INT UNIQUE, <span class="token comment"># 唯一约束</span>
+	age INT DEFAULT <span class="token number">7</span>, <span class="token comment"># 默认约束</span>
+	majorId INT REFERENCES major<span class="token punctuation">(</span>id<span class="token punctuation">)</span> <span class="token comment"># 外键约束</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+CREATE TABLE student <span class="token punctuation">(</span>
+	<span class="token function">id</span> INT,
+	stu_name VARCHAR<span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span>,
+	gender CHAR<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>,
+	seat INT,
+	age INT,
+	majorId INT,
+
+	CONSTRAINT pk PRIMARY KEY<span class="token punctuation">(</span>id<span class="token punctuation">)</span>, <span class="token comment"># 主键约束</span>
+	CONSTRAINT uq UNIQUE<span class="token punctuation">(</span>seat<span class="token punctuation">)</span>, <span class="token comment"># 唯一约束</span>
+	CONSTRAINT ck CHECK<span class="token punctuation">(</span>gender <span class="token operator">=</span> <span class="token string">'男'</span> OR gender <span class="token operator">=</span> <span class="token string">'女'</span><span class="token punctuation">)</span>, <span class="token comment"># 检查约束</span>
+	CONSTRAINT fk_major FOREIGN KEY<span class="token punctuation">(</span>majorId<span class="token punctuation">)</span> REFERENCES major<span class="token punctuation">(</span>id<span class="token punctuation">)</span> <span class="token comment"># 外键约束</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment"># CONSTRAINT [约束键名] 可以省略，则默认的键名为绑定的字段名</span>
+<span class="token comment"># 通用的写法为除了外键约束用表级约束的写法外都用列级约束写法</span>
+
+
+// 主表
+CREATE TABLE major<span class="token punctuation">(</span>
+	<span class="token function">id</span> INT PRIMARY KEY, <span class="token comment"># 关联列 一般是主键约束或唯一约束</span>
+	name VARCHAR<span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+
+<span class="token comment">### 修改表时添加</span>
+​```sql
+CREATE TABLE student <span class="token punctuation">(</span>
+	<span class="token function">id</span> INT,
+	stu_name VARCHAR<span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span>,
+	gender CHAR<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>,
+	seat INT,
+	age INT,
+	majorId INT
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment"># 添加非空约束</span>
+ALTER TABLE student MODIFY COLUMN stu_name VARCHAR<span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span> NOT NULL<span class="token punctuation">;</span>
+
+<span class="token comment"># 添加默认约束</span>
+ALTER TABLE student MODIFY COLUMN age INT DEFAULT <span class="token number">18</span><span class="token punctuation">;</span>
+
+<span class="token comment"># 添加主键约束</span>
+ALTER TABLE student MODIFY COLUMN <span class="token function">id</span> INT PRIMARY KEY<span class="token punctuation">;</span>
+ALTER TABLE student ADD PRIMARY KEY<span class="token punctuation">(</span>id<span class="token punctuation">)</span><span class="token punctuation">;</span>
+			    
+<span class="token comment"># 添加唯一约束</span>
+ALTER TABLE student MODIFY COLUMN seat INT UNIQUE<span class="token punctuation">;</span>
+ALTER TABLE student ADD UNIQUE<span class="token punctuation">(</span>seat<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment"># 添加外键约束</span>
+ALTER TABLE student ADD CONSTRAINT fk_major FOREIGN KEY<span class="token punctuation">(</span>majorId<span class="token punctuation">)</span> REFERENCES major<span class="token punctuation">(</span>id<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br></div></div><h3 id="删除"><a href="#删除" class="header-anchor">#</a> 删除</h3> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment"># 修改表时删除</span>
+
+<span class="token comment"># 删除非空约束</span>
+ALTER TABLE student MODIFY COLUMN stu_name VARCHAR<span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span> NULL<span class="token punctuation">;</span>
+
+<span class="token comment"># 删除默认约束</span>
+ALTER TABLE student MODIFY COLUMN age INT<span class="token punctuation">;</span>
+
+<span class="token comment"># 删除主键约束</span>
+ALTER TABLE student DROP PRIMARY KEY<span class="token punctuation">;</span>
+
+<span class="token comment"># 删除唯一约束</span>
+ALTER TABLE student DROP INDEX seat<span class="token punctuation">;</span>
+
+<span class="token comment"># 删除外键和约束</span>
+ALTER TABLE student DROP FOREIGN KEY fk_major<span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><h2 id="数据操作"><a href="#数据操作" class="header-anchor">#</a> 数据操作</h2> <h3 id="插入-insert-into-values"><a href="#插入-insert-into-values" class="header-anchor">#</a> 插入 INSERT INTO VALUES</h3> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>insert into student <span class="token punctuation">(</span>id, stu_name, age, gender, seat, majorId<span class="token punctuation">)</span> values <span class="token punctuation">(</span><span class="token number">1</span>, <span class="token string">'Tom'</span>, <span class="token number">18</span>, <span class="token string">'G'</span>, <span class="token number">11</span>, <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+insert into student <span class="token builtin class-name">set</span> <span class="token function">id</span> <span class="token operator">=</span> <span class="token number">1</span>, stu_name <span class="token operator">=</span> <span class="token string">'Tom'</span><span class="token punctuation">;</span>
+
+
+<span class="token comment"># 复制其他表</span>
+insert into student <span class="token punctuation">(</span>id, stu_name, age, gender, seat, majorId<span class="token punctuation">)</span> <span class="token keyword">select</span> id, stu_name, age, gender, seat, majorId from student_co<span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h3 id="删除-delete-from"><a href="#删除-delete-from" class="header-anchor">#</a> 删除 DELETE    FROM</h3> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment"># 删除所有数据(不可找回，也不返回被删除数量)</span>
+truncate student<span class="token punctuation">;</span>
+
+<span class="token comment"># 删除所有数据(可找回，会返回被删除的数量)</span>
+delete from student<span class="token punctuation">;</span>
+
+<span class="token comment"># 删除某行数据</span>
+delete from student where <span class="token function">id</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h3 id="查询"><a href="#查询" class="header-anchor">#</a> 查询</h3> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>​``<span class="token variable"><span class="token variable">`</span>sql
+<span class="token keyword">select</span> * from student<span class="token punctuation">;</span>
+<span class="token keyword">select</span> id, stu_name from student<span class="token punctuation">;</span>
+​<span class="token variable">`</span></span>`<span class="token variable"><span class="token variable">`</span>
+<span class="token variable">`</span></span>起别名<span class="token variable"><span class="token variable">`</span>
+​<span class="token variable">`</span></span>`<span class="token variable"><span class="token variable">`</span>sql
+<span class="token keyword">select</span> stu_name AS 姓名 from student<span class="token punctuation">;</span>
+​<span class="token variable">`</span></span>`<span class="token variable"><span class="token variable">`</span>
+<span class="token variable">`</span></span> 数据去重<span class="token variable"><span class="token variable">`</span>
+​<span class="token variable">`</span></span>`<span class="token variable"><span class="token variable">`</span>sql
+<span class="token keyword">select</span> distinct stu_name from student<span class="token punctuation">;</span>
+​<span class="token variable">`</span></span>`<span class="token variable"><span class="token variable">`</span>
+<span class="token variable">`</span></span> 分页查询<span class="token variable"><span class="token variable">`</span>
+​<span class="token variable">`</span></span>`<span class="token variable"><span class="token variable">`</span>sql
+<span class="token comment"># 返回前五行数据 最后一条数据索引：0 + 5 - 1</span>
+<span class="token keyword">select</span> * from student limit <span class="token number">0</span>, <span class="token number">5</span><span class="token punctuation">;</span>
+<span class="token keyword">select</span> * from student limit <span class="token number">5</span><span class="token punctuation">;</span>
+<span class="token keyword">select</span> * from student limit <span class="token number">5</span> offset <span class="token number">0</span><span class="token punctuation">;</span>
+​<span class="token variable">`</span></span>`<span class="token variable"><span class="token variable">`</span>
+<span class="token variable">`</span></span> 查询后排序<span class="token variable"><span class="token variable">`</span>
+​<span class="token variable">`</span></span>`<span class="token variable"><span class="token variable">`</span>sql
+<span class="token comment"># 先对age降序， 再对seat字段升序</span>
+<span class="token keyword">select</span> * from student order by age desc, seat ASC<span class="token punctuation">;</span>
+​<span class="token variable">`</span></span>`<span class="token variable"><span class="token variable">`</span>
+<span class="token variable">`</span></span> 条件查询<span class="token variable"><span class="token variable">`</span>
+​<span class="token variable">`</span></span>``sql
+<span class="token keyword">select</span> age from student where age <span class="token operator">&gt;</span> <span class="token number">17</span> and age <span class="token operator">&lt;</span> <span class="token number">20</span><span class="token punctuation">;</span>
+<span class="token keyword">select</span> age from student where age between <span class="token number">18</span> and <span class="token number">20</span><span class="token punctuation">;</span>
+<span class="token keyword">select</span> age from student where age not between <span class="token number">18</span> and <span class="token number">20</span><span class="token punctuation">;</span>
+
+<span class="token keyword">select</span> stu_name from stduent where stu_name is not null<span class="token punctuation">;</span>
+<span class="token keyword">select</span> stu_name from stduent where stu_name is null<span class="token punctuation">;</span>
+<span class="token comment"># 模糊查询</span>
+<span class="token keyword">select</span> stu_name from student where stu_name not like <span class="token string">'%j%'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">select</span> stu_name from student where stu_name like binary <span class="token string">'%j'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">select</span> stu_name from student where stu_name like <span class="token string">'__j'</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br></div></div><h4 id="分组查询"><a href="#分组查询" class="header-anchor">#</a> 分组查询</h4> <p><code>查询列表必须特殊，要求是分组函数和group by 后的字段</code></p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code> <span class="token keyword">select</span> 分组函数,  列
+ from 表
+ 【where 筛选条件】
+ group by 分组的列表
+ 【order by 子句】
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p><code>分组函数</code></p> <ol><li>sum()</li> <li>avg()</li> <li>max()</li> <li>min()</li> <li>count()  可以和distinct搭配使用</li></ol> <h4 id="连接查询"><a href="#连接查询" class="header-anchor">#</a> 连接查询</h4> <blockquote><p>按年代分：
+192和199标准
+按功能分：</p> <ol><li>内连接 INNER ：只返回两个表中连接字段相等的行。</li> <li>等值连接</li> <li>非等值连接</li> <li>自连接（表连接自己）：员工和他的上级</li> <li>外连接：查询结果 = 内连接查询结果 + 主表中有而从表中没有的结果</li> <li>左外连接 LEFT [OUTER] ：left左边是主表，返回包括左表中的所有记录和右表中连接字段相等的记录</li> <li>右外连接 RIGHT [OUTER]：right 右边是主表，返回包括右表中的所有记录和左表中连接字段相等的记录</li> <li>全外连接 FULL [OUTER]，返回左右表中所有的记录和左右表中连接字段相等的记录。</li> <li>交叉连接  CROSS：两个表进行笛卡尔积运算的结果</li></ol></blockquote> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment"># sql199标准的写法</span>
+<span class="token keyword">select</span> 列
+from 表1 【别名】
+【连接类型】join 表2 on 连接条件
+【where 筛选条件】
+【group by 分组筛选】
+【having 筛选条件】
+【order by 排序】
+
+
+<span class="token keyword">select</span> g.name, b.name
+from girls g inner
+<span class="token function">join</span> boys b
+on g.id <span class="token operator">=</span> b.id
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><h3 id="集合运算"><a href="#集合运算" class="header-anchor">#</a> 集合运算</h3> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment"># 并操作 union</span>
+<span class="token comment"># 交操作 intersect</span>
+<span class="token comment"># 差操作 except</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment"># 内连接</span>
+<span class="token keyword">select</span> * from goods, category where goods.categoryno <span class="token operator">=</span> category.categoryno<span class="token punctuation">;</span>
+<span class="token keyword">select</span> * from goods <span class="token function">join</span> category on goods.categoryno <span class="token operator">=</span> category.categoryno<span class="token punctuation">;</span>
+
+<span class="token comment"># 等值连接：查询的时候将多表连接的结果看成一个单表来操作</span>
+<span class="token keyword">select</span> college, sname, sum<span class="token punctuation">(</span>salebill.number * saleprice<span class="token punctuation">)</span> 消费金额 
+from student
+<span class="token function">join</span> salebill on student.sno <span class="token operator">=</span> salebill.sno
+<span class="token function">join</span> goods on goods.goodsno <span class="token operator">=</span> salebill.goodsno
+where college <span class="token operator">=</span> <span class="token string">'CS'</span>
+group by college, sname<span class="token punctuation">;</span>
+
+<span class="token comment"># 自连接</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><h2 id="存储引擎"><a href="#存储引擎" class="header-anchor">#</a> 存储引擎</h2> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>​``<span class="token variable"><span class="token variable">`</span>sql
+show create table<span class="token punctuation">;</span> <span class="token comment"># 可以 查看当前表的引擎</span>
+
+alter table <span class="token punctuation">[</span>table_name<span class="token punctuation">]</span> engine <span class="token operator">=</span> InnoDB<span class="token punctuation">;</span>
+​<span class="token variable">`</span></span>``xxxxxxxxxx <span class="token keyword">select</span> * from table1 where age <span class="token operator">&gt;</span> 20unionselect * from table2 where uage <span class="token operator">&gt;</span> <span class="token number">20</span><span class="token punctuation">;</span><span class="token comment">#特点：# 这些表查询的列数和顺序要一致# 会自动去重 union all 不去重sql</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div></div></section> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">7/17/2021, 8:49:46 PM</span></div></footer> <!----> <div class="comments-wrapper"><!----></div> <ul class="side-bar sub-sidebar-wrapper" style="width:12rem;" data-v-70334359><li class="level-3" data-v-70334359><a href="/baiyu/blogs/ke-tang/shu-ju-ku/mysqlming-ling.html#创建" class="sidebar-link reco-side-创建" data-v-70334359>创建</a></li><li class="level-3" data-v-70334359><a href="/baiyu/blogs/ke-tang/shu-ju-ku/mysqlming-ling.html#使用和查看" class="sidebar-link reco-side-使用和查看" data-v-70334359>使用和查看</a></li><li class="level-3" data-v-70334359><a href="/baiyu/blogs/ke-tang/shu-ju-ku/mysqlming-ling.html#修改和删除" class="sidebar-link reco-side-修改和删除" data-v-70334359>修改和删除</a></li><li class="level-2" data-v-70334359><a href="/baiyu/blogs/ke-tang/shu-ju-ku/mysqlming-ling.html#数据表" class="sidebar-link reco-side-数据表" data-v-70334359>数据表</a></li><li class="level-3" data-v-70334359><a href="/baiyu/blogs/ke-tang/shu-ju-ku/mysqlming-ling.html#创建和查看" class="sidebar-link reco-side-创建和查看" data-v-70334359>创建和查看</a></li><li class="level-3" data-v-70334359><a href="/baiyu/blogs/ke-tang/shu-ju-ku/mysqlming-ling.html#修改和删除-2" class="sidebar-link reco-side-修改和删除-2" data-v-70334359>修改和删除</a></li><li class="level-2" data-v-70334359><a href="/baiyu/blogs/ke-tang/shu-ju-ku/mysqlming-ling.html#约束" class="sidebar-link reco-side-约束" data-v-70334359>约束</a></li><li class="level-3" data-v-70334359><a href="/baiyu/blogs/ke-tang/shu-ju-ku/mysqlming-ling.html#添加约束" class="sidebar-link reco-side-添加约束" data-v-70334359>添加约束</a></li><li class="level-3" data-v-70334359><a href="/baiyu/blogs/ke-tang/shu-ju-ku/mysqlming-ling.html#删除" class="sidebar-link reco-side-删除" data-v-70334359>删除</a></li><li class="level-2" data-v-70334359><a href="/baiyu/blogs/ke-tang/shu-ju-ku/mysqlming-ling.html#数据操作" class="sidebar-link reco-side-数据操作" data-v-70334359>数据操作</a></li><li class="level-3" data-v-70334359><a href="/baiyu/blogs/ke-tang/shu-ju-ku/mysqlming-ling.html#插入-insert-into-values" class="sidebar-link reco-side-插入-insert-into-values" data-v-70334359>插入 INSERT INTO VALUES</a></li><li class="level-3" data-v-70334359><a href="/baiyu/blogs/ke-tang/shu-ju-ku/mysqlming-ling.html#删除-delete-from" class="sidebar-link reco-side-删除-delete-from" data-v-70334359>删除 DELETE    FROM</a></li><li class="level-3" data-v-70334359><a href="/baiyu/blogs/ke-tang/shu-ju-ku/mysqlming-ling.html#查询" class="sidebar-link reco-side-查询" data-v-70334359>查询</a></li><li class="level-3" data-v-70334359><a href="/baiyu/blogs/ke-tang/shu-ju-ku/mysqlming-ling.html#集合运算" class="sidebar-link reco-side-集合运算" data-v-70334359>集合运算</a></li><li class="level-2" data-v-70334359><a href="/baiyu/blogs/ke-tang/shu-ju-ku/mysqlming-ling.html#存储引擎" class="sidebar-link reco-side-存储引擎" data-v-70334359>存储引擎</a></li></ul></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div></div></div>
+    <script src="/baiyu/assets/js/app.da37ac01.js" defer></script><script src="/baiyu/assets/js/4.8206f188.js" defer></script><script src="/baiyu/assets/js/1.ffe9b45f.js" defer></script><script src="/baiyu/assets/js/48.6a1298a6.js" defer></script>
+  </body>
+</html>
